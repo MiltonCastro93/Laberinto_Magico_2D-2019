@@ -1,45 +1,54 @@
 # 🧙‍♂️ Laberinto Mágico 2D
 
 **Laberinto Mágico 2D** es un proyecto académico y personal desarrollado originalmente en **2017 (Imagen Campus)** y posteriormente actualizado a **Unity 2019** al realizar una migración entre equipos.  
-El juego consiste en una experiencia **2D vista desde arriba**, donde el jugador controla a un **mago** que debe llegar del **punto A al punto B** evitando enemigos y obstáculos dentro de un laberinto.
+El juego consiste en una experiencia **2D vista desde arriba**, donde el jugador controla a un **mago** que debe llegar del **punto A al punto B**, evitando enemigos dentro de un laberinto repleto de pasillos y trampas.
 
 ---
 
-## 🧩 Concepto del Juego
+## 🎮 Concepto del Juego
 
-El objetivo principal es simple pero desafiante: **encontrar la salida del laberinto**.  
-El jugador debe planificar sus movimientos cuidadosamente, ya que los enemigos patrullan rutas predefinidas y pueden detectar al mago si se aproxima demasiado.
+El objetivo principal es **encontrar la salida del laberinto**, recolectando llaves y esquivando enemigos.  
+La cámara cenital permite al jugador planificar rutas y anticipar los movimientos de los enemigos.
 
 ---
 
 ## ⚙️ Aspectos Técnicos Destacados
 
-- **Motor:** Unity (versión 2019, originalmente 2017)
-- **Lenguaje:** C#
-- **Género:** Aventura / Puzle / Top-Down 2D
-- **Plataforma:** PC (prototipo jugable)
-- **Tipo de proyecto:** Académico y experimental
+| Característica | Detalle |
+|----------------|----------|
+| 🧩 **Motor** | Unity 2019 (originalmente 2017) |
+| 💻 **Lenguaje** | C# |
+| 🧭 **Perspectiva** | Top-Down 2D |
+| 🧪 **Tipo de Proyecto** | Académico y experimental |
+| 🧙‍♂️ **Rol del jugador** | Controlar un mago y avanzar evitando enemigos |
 
-### 🧠 Implementación del Sistema de Navegación
+### 🧠 Implementación del Pathfinding
 
-Uno de los mayores retos fue implementar un sistema de **pathfinding funcional en 2D**, ya que **Unity no contaba con soporte nativo para NavMesh en entornos 2D** en aquel entonces.
+En el momento del desarrollo, **Unity no contaba con soporte nativo para pathfinding en 2D**.  
+Para lograr movimiento inteligente y navegación autónoma se implementó una **solución técnica alternativa**:
 
-Para resolverlo, se aplicó una **solución alternativa creativa**:
+- Se utilizó el **`NavMeshAgent`** (una herramienta diseñada para 3D).  
+- La **cámara se colocó sobre el eje Y** con una inclinación de **90°**, simulando una vista superior 2D.  
+- El entorno se configuró sobre el plano **XZ**, permitiendo que el agente calcule rutas correctamente.  
 
-- Se utilizó el **`NavMeshAgent`** (normalmente usado en 3D).  
-- La **cámara se colocó en el eje Y con una inclinación de 90°**, simulando la vista cenital de un entorno 2D.  
-- El entorno, colisiones y navegación se adaptaron para funcionar correctamente sobre el plano XZ.  
-
-Esta estrategia permitió **usar navegación automática** y **evitación de obstáculos** en un entorno 2D, logrando una jugabilidad fluida sin necesidad de sistemas externos.
+Este enfoque creativo permitió incorporar **IA de navegación y evasión de obstáculos** sin usar librerías externas.
 
 ---
 
-## 🎮 Mecánicas Principales
+## 🎨 Diseño y Estética
 
-- Movimiento automático del jugador a la posición seleccionada.
-- Detección y evasión de enemigos con IA básica.
-- Colisiones y límites de escenario.
-- Transición de niveles al llegar al destino.
+El apartado visual fue realizado utilizando **[Piskel](https://www.piskelapp.com/)**, una herramienta online gratuita para crear pixel art.  
+Todos los elementos visuales fueron diseñados de manera sencilla para mantener una estética retro y funcional, adaptada a los límites técnicos del proyecto.
+
+---
+
+## 🕹️ Mecánicas Principales
+
+- Movimiento automático del jugador hacia puntos del escenario.  
+- Detección y evasión de enemigos con IA básica.  
+- Recolección de llaves para desbloquear zonas o niveles.  
+- Detección de colisiones y manejo de límites de mapa.  
+- Cámara fija cenital para una visión completa del laberinto.
 
 ---
 
@@ -51,8 +60,16 @@ _(Imágenes de libre licencia utilizadas con fines académicos)_
 
 <table>
   <tr>
-    <td><img src="https://github.com/MiltonCastro93/Laberinto_Magico_2D-2019/blob/main/Captura%20de%20pantalla%202025-11-02%20143052.png" width="380"/></td>
+    <td><img src="https://github.com/MiltonCastro93/LaberintoMagico2D/blob/main/Captura%20de%20pantalla%202025-11-02%20143031.png" width="380"/></td>
     <td><img src="URL_IMAGEN_2" width="380"/></td>
+  </tr>
+  <tr>
+    <td><img src="URL_IMAGEN_3" width="380"/></td>
+    <td><img src="URL_IMAGEN_4" width="380"/></td>
+  </tr>
+  <tr>
+    <td><img src="URL_IMAGEN_5" width="380"/></td>
+    <td><img src="URL_IMAGEN_6" width="380"/></td>
   </tr>
 </table>
 
@@ -63,12 +80,12 @@ _(Imágenes de libre licencia utilizadas con fines académicos)_
 ## 🧾 Estado del Proyecto
 
 - 📅 **Año original:** 2017  
-- 🧭 **Actualizado a:** Unity 2019  
-- 🧑‍💻 **Desarrollador:** Milton Castro  
-- 🧪 **Propósito:** Académico y de experimentación técnica  
+- 🔄 **Actualizado a:** Unity 2019  
+- 💡 **Propósito:** Académico y técnico  
+- 👨‍💻 **Desarrollador:** Milton Castro  
 
 ---
 
-> 💡 *Este proyecto representa una solución técnica creativa para simular pathfinding en entornos 2D utilizando herramientas 3D, demostrando la flexibilidad del motor Unity y la adaptabilidad del desarrollador ante sus limitaciones técnicas.*
+> 💬 *Laberinto Mágico 2D representa un ejercicio de creatividad técnica en la implementación de navegación en entornos 2D sin soporte nativo, combinando soluciones de ingeniería y diseño artesanal.*
 
 ---
