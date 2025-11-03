@@ -5,10 +5,11 @@ El juego consiste en una experiencia **2D vista desde arriba**, donde el jugador
 
 ---
 
-## 🎮 Concepto del Juego
+## 🕹️ Concepto del Juego
 
 El objetivo principal es **encontrar la salida del laberinto**, recolectando llaves y esquivando enemigos.  
-La cámara cenital permite al jugador planificar rutas y anticipar los movimientos de los enemigos.
+La cámara cenital permite al jugador planificar rutas y anticipar los movimientos de los enemigos.  
+Cada partida pone a prueba la orientación y la toma de decisiones del jugador.
 
 ---
 
@@ -27,28 +28,36 @@ La cámara cenital permite al jugador planificar rutas y anticipar los movimient
 En el momento del desarrollo, **Unity no contaba con soporte nativo para pathfinding en 2D**.  
 Para lograr movimiento inteligente y navegación autónoma se implementó una **solución técnica alternativa**:
 
-- Se utilizó el **`NavMeshAgent`** (una herramienta diseñada para 3D).  
+- Se utilizó el **`NavMeshAgent`** (una herramienta diseñada originalmente para 3D).  
 - La **cámara se colocó sobre el eje Y** con una inclinación de **90°**, simulando una vista superior 2D.  
 - El entorno se configuró sobre el plano **XZ**, permitiendo que el agente calcule rutas correctamente.  
 
-Este enfoque creativo permitió incorporar **IA de navegación y evasión de obstáculos** sin usar librerías externas.
+Este enfoque creativo permitió incorporar **IA de navegación y evasión de obstáculos** sin usar librerías externas, demostrando un ingenio técnico notable.
 
 ---
 
 ## 🎨 Diseño y Estética
 
-El apartado visual fue realizado utilizando **[Piskel](https://www.piskelapp.com/)**, una herramienta online gratuita para crear pixel art.  
-Todos los elementos visuales fueron diseñados de manera sencilla para mantener una estética retro y funcional, adaptada a los límites técnicos del proyecto.
+El apartado visual fue realizado con **[Piskel](https://www.piskelapp.com/)**, una herramienta online gratuita para crear pixel art.  
+Se optó por un estilo retro minimalista, con colores contrastantes y texturas simples que facilitan la lectura visual del laberinto.
 
 ---
 
-## 🕹️ Mecánicas Principales
+## 🎧 Diseño Sonoro
 
-- Movimiento automático del jugador hacia puntos del escenario.  
-- Detección y evasión de enemigos con IA básica.  
-- Recolección de llaves para desbloquear zonas o niveles.  
-- Detección de colisiones y manejo de límites de mapa.  
-- Cámara fija cenital para una visión completa del laberinto.
+Además de la programación y diseño visual, se incorporó una **banda sonora original** creada para el menú principal.  
+Esta música incluye un **efecto de rayos eléctricos** que aporta una atmósfera mágica y misteriosa al inicio del juego, reforzando la identidad temática del mago y su entorno encantado.
+
+---
+
+## 🧩 Mecánicas Principales
+
+- Movimiento automático hacia el destino marcado.  
+- Detección y evasión de enemigos mediante IA.  
+- Recolección de llaves para progresar.  
+- Colisiones con paredes y límites del mapa.  
+- Cámara fija cenital con inclinación 90°.  
+- Música de menú con efectos de rayos.  
 
 ---
 
@@ -75,9 +84,10 @@ _(Imágenes de libre licencia utilizadas con fines académicos)_
 - 🔄 **Actualizado a:** Unity 2019  
 - 💡 **Propósito:** Académico y técnico  
 - 👨‍💻 **Desarrollador:** Milton Castro  
+- 🎵 **Música y efectos:** Original, compuesta por el autor  
 
 ---
 
-> 💬 *Laberinto Mágico 2D representa un ejercicio de creatividad técnica en la implementación de navegación en entornos 2D sin soporte nativo, combinando soluciones de ingeniería y diseño artesanal.*
+> 💬 *Laberinto Mágico 2D es una muestra de ingenio técnico y exploración creativa, integrando IA, pixel art y diseño sonoro original en un entorno 2D sin soporte nativo de pathfinding.*
 
 ---
