@@ -60,16 +60,8 @@ _(Imágenes de libre licencia utilizadas con fines académicos)_
 
 <table>
   <tr>
-    <td><img src="https://github.com/MiltonCastro93/LaberintoMagico2D/blob/main/Captura%20de%20pantalla%202025-11-02%20143031.png" width="380"/></td>
-    <td><img src="URL_IMAGEN_2" width="380"/></td>
-  </tr>
-  <tr>
-    <td><img src="URL_IMAGEN_3" width="380"/></td>
-    <td><img src="URL_IMAGEN_4" width="380"/></td>
-  </tr>
-  <tr>
-    <td><img src="URL_IMAGEN_5" width="380"/></td>
-    <td><img src="URL_IMAGEN_6" width="380"/></td>
+    <td><img src="https://github.com/MiltonCastro93/Laberinto_Magico_2D-2019/blob/main/Captura%20de%20pantalla%202025-11-02%20143052.png" width="380"/></td>
+    <td><img src="https://github.com/MiltonCastro93/Laberinto_Magico_2D-2019/blob/main/Captura%20de%20pantalla%202025-11-02%20143031.png" width="380"/></td>
   </tr>
 </table>
 
