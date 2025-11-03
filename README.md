@@ -25,7 +25,7 @@ Cada partida pone a prueba la orientación y la toma de decisiones del jugador.
 
 ### 🧠 Implementación del Pathfinding
 
-En el momento del desarrollo, **Unity no contaba con soporte nativo para pathfinding en 2D**.  
+En el momento del desarrollo, **Unity no cuenta con soporte nativo para pathfinding en 2D**.  
 Para lograr movimiento inteligente y navegación autónoma se implementó una **solución técnica alternativa**:
 
 - Se utilizó el **`NavMeshAgent`** (una herramienta diseñada originalmente para 3D).  
